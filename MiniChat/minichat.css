@@ -1,0 +1,21 @@
+/* 
+
+    minichat.css
+
+    Description:
+        TP OpenClassRooms du minichat
+        css de mon minichat
+
+
+    Auteur: VMS
+    Date : 11/07/2017
+*/
+
+
+form{
+    text-align:center;
+}
+
+input{
+    margin: 5px;
+}

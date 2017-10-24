@@ -1,0 +1,58 @@
+<!-- **************************
+	formulaire.html
+
+	Virginie Mouriès
+
+	04/07/2017
+
+	************************* -->
+
+<!doctype html>s
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+	 	<title>TP1</title>
+	  
+	</head>
+
+	<body>
+
+		<h1> Formulaire </h1>
+
+	    <form method="post" action="cible2.php">
+		 
+			<p>
+				<label for="nom"> Nom :  </label> </br>		    
+		    	<input type="text" name="nom" />
+		    	</br>
+
+		    	<label for="prenom">Prénom : </label></br>		    
+		    	<input type="text" name="prenom" />
+		    	</br>
+
+				<label for="age">Age : </br>		    
+		    	<input type="text" name="age" /></br>
+
+		    	<label for="sexe">Sexe : </label></br>	
+		    	<select name="sexe">
+		    	    <option value="femme">Femme</option>
+		    	    <option value="homme">Homme</option>		    	    
+		    	</select>
+		    	</br></br>
+
+		    	<input type="hidden" name="tache" value="formulaire">
+
+		    	<input type="submit" name="valider" value="Valider" />
+
+			</p>
+		 
+		</form>
+
+		<?php
+
+		?>	
+
+	</body>
+</html>
+

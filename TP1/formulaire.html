@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Amelie WIDLOECHER, Virginie MOURIES, Mathieu LAUER -->
+	
+	<meta charset="utf-8">
+	<title>Formulaire</title>
+
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+	<form method="post" action="index.php">
+		<!-- ..............partie état civil.................... -->
+		<fieldset id="civil_status">
+			<legend>ETAT CIVIL</legend>
+
+			<fieldset id="you">
+				<legend>Vous</legend>
+
+				<label for="date">Date du jour : </label>
+				<input type="date" name="date" id="date">
+
+				<label for="lastname">Nom</label>
+				<input type="text" name="lastname" id="lastname">
+
+				<label for="firstname">Prénom</label>
+				<input type="text" name="firstname" id="firstname">
+
+				<label for="age">Age</label>
+				<input type="text" name="age" id="age">
+
+				<label for="birthday">Date de naissance</label>
+				<input type="date" name="birthday" id="birthday">
+
+				<br/>
+
+				<label for="nationality">Nationalité</label>
+				<select id="nationality" name="nationality">
+					<option value="Française">Française</option>
+					<option value="Luxembourgeoise">Luxembourgeoise</option>
+				</select>
+
+				<br/>
+				<br/>
+
+				<label for="residence">Résidence fiscale</label>
+				<input type="text" name="residence" id="residence">
+
+				<label for="postal_code">Code postal</label>
+				<input type="text" name="postal_code" id="postal_code">		
+
+				<label for="email">Adresse email</label>
+				<input type="text" name="email" id="email">
+
+				<label for="city">Ville</label>
+				<input type="text" name="city" id="city">
+
+				<label for="phone">Téléphone</label>
+				<input type="text" name="phone" id="phone">
+
+				<label for="cellphone">Téléphone portable</label>
+				<input type="text" name="cellphone" id="cellphone">
+
+				<label for="job">Profession</label>
+				<input type="text" name="job" id="job">
+
+				<label for="income">Revenu</label>
+				<input type="text" name="income" id="income">
+				
+				<label for="famille">Situation familiale</label>
+                    <select name="family" id="family">
+                        <option value="single">Célibataire</option>
+                        <option value="married">Marié</option>
+                        <option value="divorced">Divorcé</option>                        
+                    </select>
+
+			</fieldset>
+
+			
+
+			<fieldset id="conjoint">
+				<legend>Conjoint</legend>
+
+				<label for="lastname_conjoint">Nom</label>
+				<input type="text" name="lastname_conjoint" id="lastname_conjoint">
+
+				<label for="firstname_conjoint">Prénom</label>
+				<input type="text" name="firstname_conjoint" id="firstname_conjoint">
+
+				<label for="age_conjoint">Age</label>
+				<input type="text" name="age_conjoint" id="age_conjoint">
+
+				<label for="birthday_conjoint">Date de naissance</label>
+				<input type="date" name="birthday_conjoint" id="birthday_conjoint">
+
+				<label for="job_conjoint">Profession</label>
+				<input type="text" name="job_conjoint" id="job_conjoint">
+
+				<label for="income_conjoint">Revenu</label>
+				<input type="text" name="income_conjoint" id="income_conjoint">
+			</fieldset>
+
+			<fieldset id="children">
+				<legend>Enfants</legend>
+				
+				<label for="lastname_children1">Nom</label>
+				<input type="text" name="lastname_children1" id="lastname_children1">
+
+				<label for="firstname_children1">Prénom</label>
+				<input type="text" name="firstname_children1" id="firstname_children1">
+
+				<label for="birthday_children1">Date de naissance</label>
+				<input type="date" name="birthday_children1" id="birthday_children1">
+
+				<br />
+
+				<label for="lastname_children2">Nom</label>
+				<input type="text" name="lastname_children2" id="lastname_children2">
+
+				<label for="firstname_children2">Prénom</label>
+				<input type="text" name="firstname_children2" id="firstname_children2">
+
+				<label for="birthday_children2">Date de naissance</label>
+				<input type="date" name="birthday_children2" id="birthday_children2">
+
+				<br />
+				<label for="lastname_children3">Nom</label>
+				<input type="text" name="lastname_children3" id="lastname_children3">
+
+				<label for="firstname_children3">Prénom</label>
+				<input type="text" name="firstname_children3" id="firstname_children3">
+
+				<label for="birthday_children3">Date de naissance</label>
+				<input type="date" name="birthday_children3" id="birthday_children3">
+
+			</fieldset>
+
+		</fieldset>
+
+		<!-- ..............partie fiscale....................... -->
+		<fieldset id=tax>
+			<legend>FISCALE</legend>
+
+			<fieldset id="you2">
+				<legend>Vous</legend>
+
+				<label for="tax_paid">Montant d'impôts payés</label>
+				<input type="text" name="tax_paid" id="tax_paid">
+
+				<legend>Si vous faites votre déclaration d'impôts</legend>
+				
+				<fieldset>
+					<legend>Déduisez-vous?</legend>
+
+					<label for="el">EL</label>
+					<input type="checkbox" name='el' value="el" id="el">
+
+					<label for="a110">A110</label>
+					<input type="checkbox" name="a110" value="a110" id="a110">
+
+					<label for="a111">A111</label>
+					<input type="checkbox" name="a111" value="a111" id="a111">
+
+					<label for="111b">111B</label>
+					<input type="checkbox" name="111b" value="111b" id="111b">
+
+					<label for="srd">SRD</label>
+					<input type="checkbox" name="srd" value="srd" id="srd">
+				</fieldset>
+
+				<fieldset>
+					<legend>Si non, êtes-vous intéressé pour le faire ?</legend>
+
+					<label for="yes">Oui</label>
+					<input type="radio" value="yes" id="yes" name="interest">
+
+					<label for="no">Non</label>
+					<input type="radio" value="no" id="no" name="interest" checked="checked">
+				</fieldset>
+
+			</fieldset>
+
+			<fieldset id="conjoint2">
+				<legend>Votre conjoint</legend>
+
+				<label for="tax_conjoint">Montant d'impôts payés</label>
+				<input type="text" name="tax_conjoint" id="tax_conjoint">
+
+				<legend>S'il fait sa déclaration d'impôts</legend>
+				
+				<fieldset>
+					<legend>Déduise-t-il?</legend>
+
+					<label for="el_conjoint">EL</label>
+					<input type="checkbox" value="el1_conjoint" id="el1_conjoint">
+
+					<label for="a110_conjoint">A110</label>
+					<input type="checkbox" value="a110_conjoint" id="a110_conjoint">
+
+					<label for="a111_conjoint">A111</label>
+					<input type="checkbox" value="a111_conjoint" id="a111_conjoint">
+
+					<label for="111b_conjoint">111B</label>
+					<input type="checkbox" value="111b_conjoint" id="111b_conjoint">
+
+					<label for="srd_conjoint">SRD</label>
+					<input type="checkbox" value="srd_conjoint" id="srd_conjoint">
+				</fieldset>
+
+				<fieldset>
+					<legend>Si non, êtes-vous intéressé pour le faire?</legend>
+
+					<label for="yes_conjoint">Oui</label>
+					<input type="radio" value="yes_conjoint" id="yes_conjoint" name="interest2">
+
+					<label for="no_conjoint">Non</label>
+					<input type="radio" value="no_conjoint" id="no_conjoint" name="interest2" checked="checked">
+				</fieldset>
+			</fieldset>
+		</fieldset>
+
+		<!-- ..............partie crédits....................... -->
+		<fieldset id="credit">
+			<legend>CREDITS</legend>
+
+			<fieldset>
+				<legend>Crédit 1</legend>
+
+				<label for="nature_loaning1">Nature de l'emprunt</label>
+				<input type="text" name="nature_loaning1" id="nature_loaning1">
+
+				<label for="monthly1">Montant des mensualités</label>
+				<input type="text" name="monthly1" id="monthly1">
+
+				<label for="end_repayment1">Date de fin de remboursement</label>
+				<input type="date" name="end_repayment1" id="end_repayment1">
+
+				<label for="credit_rate1">Taux de crédit</label>
+				<input type="text" name="credit_rate1" id="credit_rate1">
+
+				<label for="remaining_capital1">Capital restant dû</label>
+				<input type="text" name="remaining_capital1" id="remaining_capital1">
+
+				<label for="borrowed_capital1">Capital emprunté</label>
+				<input type="text" name="borrowed_capital1" id="borrowed_capital1">
+			</fieldset>
+
+			<fieldset>
+				<legend>Crédit 2</legend>
+
+				<label for="nature_loaning2">Nature de l'emprunt</label>
+				<input type="text" name="nature_loaning2" id="nature_loaning2">
+
+				<label for="monthly2">Montant des mensualités</label>
+				<input type="text" name="monthly2" id="monthly2">
+
+				<label for="end_repayment2">Date de fin de remboursement</label>
+				<input type="date" name="end_repayment2" id="end_repayment2">
+
+				<label for="credit_rate2">Taux de crédit</label>
+				<input type="text" name="credit_rate2" id="credit_rate2">
+
+				<label for="remaining_capital2">Capital restant dû</label>
+				<input type="text" name="remaining_capital2" id="remaining_capital2">
+
+				<label for="borrowed_capital2">Capital emprunté</label>
+				<input type="text" name="borrowed_capital2" id="borrowed_capital2">
+			</fieldset>
+
+			<fieldset>
+				<legend>Crédit 3</legend>
+
+				<label for="nature_loaning3">Nature de l'emprunt</label>
+				<input type="text" name="nature_loaning3" id="nature_loaning3">
+
+				<label for="monthly3">Montant des mensualités</label>
+				<input type="text" name="monthly3" id="monthly3">
+
+				<label for="end_repayment3">Date de fin de remboursement</label>
+				<input type="date" name="end_repayment3" id="end_repayment3">
+
+				<label for="credit_rate3">Taux de crédit</label>
+				<input type="text" name="credit_rate3" id="credit_rate3">
+
+				<label for="remaining_capital3">Capital restant dû</label>
+				<input type="text" name="remaining_capital3" id="remaining_capital3">
+
+				<label for="borrowed_capital3">Capital emprunté</label>
+				<input type="text" name="borrowed_capital3" id="borrowed_capital3">
+			</fieldset>
+
+			<fieldset>
+				<legend>Crédit 4</legend>
+
+				<label for="nature_loaning4">Nature de l'emprunt</label>
+				<input type="text" name="nature_loaning4" id="nature_loaning4">
+
+				<label for="monthly4">Montant des mensualités</label>
+				<input type="text" name="monthly4" id="monthly4">
+
+				<label for="end_repayment4">Date de fin de remboursement</label>
+				<input type="date" name="end_repayment4" id="end_repayment4">
+
+				<label for="credit_rate4">Taux de crédit</label>
+				<input type="text" name="credit_rate4" id="credit_rate4">
+
+				<label for="remaining_capital4">Capital restant dû</label>
+				<input type="text" name="remaining_capital4" id="remaining_capital4">
+
+				<label for="borrowed_capital4">Capital emprunté</label>
+				<input type="text" name="borrowed_capital4" id="borrowed_capital4">
+			</fieldset>
+
+			<fieldset>
+				<legend>Crédit 5</legend>
+
+				<label for="nature_loaning5">Nature de l'emprunt</label>
+				<input type="text" name="nature_loaning5" id="nature_loaning5">
+
+				<label for="monthly5">Montant des mensualités</label>
+				<input type="text" name="monthly5" id="monthly5">
+
+				<label for="end_repayment5">Date de fin de remboursement</label>
+				<input type="date" name="end_repayment5" id="end_repayment5">
+
+				<label for="credit_rate5">Taux de crédit</label>
+				<input type="text" name="credit_rate5" id="credit_rate5">
+
+				<label for="remaining_capital5">Capital restant dû</label>
+				<input type="text" name="remaining_capital5" id="remaining_capital5">
+
+				<label for="borrowed_capital5">Capital emprunté</label>
+				<input type="text" name="borrowed_capital5" id="borrowed_capital5">
+			</fieldset>
+		</fieldset>
+
+		<br/>
+		
+		<button type="submit" name="send">Envoyer</button>
+	</form>
+
+</body>
+</html>
